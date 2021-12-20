@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+  body {
+    height: 100%;
+    background-color: #e2e2e2;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  p {
+    color: rgba(0, 0, 0, .8);
+  }
+
+  main {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .main-info {
+    width: 100%;
+  }
+
+  .main-info__item {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px auto;
+    background-color: #fff;
+    font-size: 14px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .2);
+    border-radius: 2px;
+  }
+
+  .main-content {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main-content__description {
+    width: 100%;
+  }
+
+  .main-content__nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ul {
+    list-style: none;
+    background: #f0f0f0;
+  }
+
+  li {
+    opacity: .8;
+    position: relative;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 20px 10px;
+  }
+
+  a:hover{
+    background-color: #818181;
+    color: #fff;
+  }
+
+  a[data-count]::after {
+    content: attr(data-count);
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: #b9c2c2;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: bold;
+  }
+
+@media (min-width: 768px) {
+
+  .main-info__item {
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+  }
+
+  .main-content {
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .2);
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .main-info__item {
+    display: inline-block;
+    text-align: left;
+    width: calc(33.332% - 3px);
+  }
+
+  .main-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-content__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  .main-content__nav {
+    display: inline-block;
+    width: 35%;
+    margin-right: -.36em;
+  }
+}
